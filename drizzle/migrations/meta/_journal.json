@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793721284682,
+      "tag": "0000_forensivault_schema_core",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793721318356,
+      "tag": "0001_forensivault_policies",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793721362212,
+      "tag": "0002_forensivault_triggers_seed",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1793721478029,
+      "tag": "0003_forensivault_admin_helpers",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1793855061085,
+      "tag": "0004_image_integrity_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1793855099443,
+      "tag": "0005_images_bucket_policies",
+      "breakpoints": true
+    }
+  ]
+}

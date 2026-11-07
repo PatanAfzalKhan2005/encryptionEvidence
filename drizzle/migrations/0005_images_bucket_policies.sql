@@ -1,0 +1,4 @@
+-- Users manage their own files in the private `images` bucket, under a first path segment equal to their user id.
+CREATE POLICY "Owner uploads own images" ON storage.objects FOR INSERT TO authenticated WITH CHECK (bucket_id = 'images' AND (storage.foldername(name))[1] = auth.uid()::text);
+CREATE POLICY "Owner reads own images" ON storage.objects FOR SELECT TO authenticated USING (bucket_id = 'images' AND (storage.foldername(name))[1] = auth.uid()::text);
+CREATE POLICY "Owner deletes own images" ON storage.objects FOR DELETE TO authenticated USING (bucket_id = 'images' AND (storage.foldername(name))[1] = auth.uid()::text);
